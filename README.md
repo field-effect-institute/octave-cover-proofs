@@ -20,6 +20,14 @@ The music and chemistry files are not two coincidences. Both are instances of on
 **4. Cosmology — the system says NO** (`OctaveCoverProofs/CosmoEpochsGradedCoverNegative.lean`)
 This is the file to read if you suspect the framework is unfalsifiable. The file encodes the standard cosmic-epoch sequence (Planck era → … → Recombination) as a strict linear order, and proves that this order admits *no* closing successor (`ncg3_no_recurring_base`) — no loop, so no octave, so the pattern **does not apply**, and `ncg5_cosmo_graded_cover_negative` records that failure as a theorem. `ncg6_terminal_order_forced` proves the failure comes from the time-ordering itself, not from how we happened to label the epochs. A framework that can only say yes is a rubber stamp; this is the proof it says no.
 
+### Two cosmology files?
+
+Next to the negative file you will find `CosmoEpochsOctave.lean`, a *positive* file proving 20 theorems about the same epochs encoded as a cyclic structure. The pair is deliberate, and the positive file says so itself: its cyclic close (Recombination → Planck) "is a structural device required by the typeclass … it is NOT a physical claim that the universe loops," and "the companion file `CosmoEpochsGradedCoverNegative` makes that point formally: the physical epoch order admits no time-respecting cyclic close." Read together: you *can* impose a cyclic encoding on the epochs by fiat, and the positive file studies that encoding — but the negative file proves the physical time-order does not supply the loop on its own. The negative is the result the articles rest on.
+
+## What else is in this repo
+
+The four result files import seven shared dependency files (`Layer.lean`, `LayerCyclicityTypes.lean`, `CycleHolonomyWitness1.lean`, `OctaveStructure.lean`, `NarrativeOctave.lean`, `TwoCoordinates.lean`, `CosmoEpochsOctave.lean`). These are scaffolding from a larger formal project on cyclic structures with marked discontinuities — they define and study a 9-element layered cycle, a 7-position cycle with two marked internal discontinuities, and the product of the two. They ship here because the four results genuinely depend on them — you can trace exactly what is used through the `import` lines — and they hold to the same standard as everything else in this repository: machine-checked, kernel path only, and certifying encoded structures, with each file's header stating its own scope. The four results above stand on their own terms regardless of what you make of the broader project the scaffolding comes from; nothing in them, or in the articles, asks you to accept that framework.
+
 ## How to check it (10–20 minutes, first run)
 
 You need: git, a terminal, a few GB of disk, and an internet connection.
