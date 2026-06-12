@@ -73,7 +73,7 @@ The toolchain (`lean-toolchain`) and the mathematics library version (`lake-mani
 
 A genuine failure on a clean clone with the pinned toolchain would mean the repository does not do what this guide says. Please open an issue with your OS, the command output, and the contents of `lean-toolchain` — that's a real finding, and finding it is what this setup is for.
 
-The same goes for the stronger kind of finding: a case where a definition doesn't capture the real thing it claims to encode. Open an issue, or write to ryan@fieldeffectinstitute.org — accepted refinements go on the record under your name.
+The same goes for the stronger kind of finding: a case where a definition doesn't capture the real thing it claims to encode. Open an issue, or write to ryan@fieldeffectinstitute.org — accepted refinements go on the record under the name or handle you choose.
 
 ## License
 
