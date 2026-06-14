@@ -6,6 +6,8 @@ The articles you came from make one structural claim: **a repeating scale with a
 
 The honest version of the pitch is not "we verified this." It is: **the proof assistant's kernel accepted these proofs, and you can make it re-check them on your own machine.** You are not asked to believe a person. You are asked to run a check.
 
+→ For the prose & reception artifacts (the articles, the per-claim witness-type manifest, the verbatim LLM review packets) — **soft-witnessed (R1), see disclosure**: https://github.com/field-effect-institute/fei-content. This repository is the formal half (R3, kernel-checked); that one is the prose half.
+
 ## The four results, in plain language
 
 **1. Music — the octave is forced** (`OctaveCoverProofs/MusicOctaveGradedCover.lean`)
